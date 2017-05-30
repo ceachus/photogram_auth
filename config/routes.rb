@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "/my_likes", :controller => "users", :action => "my_likes"
 
   get "/users/sign_in", :controller => "users", :action => "sign_in"
-  get "/users/new", :controller => "users", :action => "sign_up"
+  get "/users/sign_up", :controller => "users", :action => "sign_up"
 
 
   # Routes for the Comment resource:

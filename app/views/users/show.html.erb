@@ -23,16 +23,11 @@
               <img src = "<%= photo.image %>" class = "img-responsive">
             </a>
             <div class="panel-body">
-              <!--make sure like button deletes and adds  -->
-              <!-- <% if @my_like != nil %>
-              <a href = "/delete_like/<%= @my_like %>" class = "btn btn-link">
-              <i class="fa fa-heart"></i>
-            </a>
-            <% else %> -->
+
             <a href = "/create_like" class = "btn btn-link">
               <i class="fa fa-heart-o"></i>
             </a>
-            <!-- <% end %> -->
+
 
             <!-- add all the likes for this particular photo -->
             <p>
