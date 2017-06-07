@@ -17,6 +17,8 @@ class PhotosController < ApplicationController
     render("photos/new.html.erb")
   end
 
+  
+
   def create
     @photo = Photo.new
 

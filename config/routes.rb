@@ -8,10 +8,11 @@ Rails.application.routes.draw do
 
   get "/users", :controller => "users", :action => "index"
   get "/users/:id", :controller => "users", :action => "show"
-  get "/my_likes", :controller => "users", :action => "my_likes"
+
 
   get "/users/sign_in", :controller => "users", :action => "sign_in"
   get "/users/sign_up", :controller => "users", :action => "sign_up"
+  get "/my_likes", :controller => "users", :action => "my_likes"
 
 
   # Routes for the Comment resource:
@@ -39,6 +40,7 @@ Rails.application.routes.draw do
   # READ
   get "/likes", :controller => "likes", :action => "index"
   get "/likes/:id", :controller => "likes", :action => "show"
+
 
   # UPDATE
   get "/likes/:id/edit", :controller => "likes", :action => "edit"
